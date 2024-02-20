@@ -102,7 +102,7 @@ Counting broken rice grains is a common task, however, we will obtain the total 
 
 
 Using an area-based technique, I classified the rice grains into two categories by applying a threshold after several trial and error attempts.
-<center> ** Either Broken rice grain or Full rice grain **. </center>
+"**Either Broken rice grain or Full rice grain**"
 
 The image is classified as broken rice if its area is smaller than the given threshold.
 
