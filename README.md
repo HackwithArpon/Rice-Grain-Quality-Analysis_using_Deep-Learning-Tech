@@ -1,7 +1,7 @@
-# Rice Grain Purity Analysis based on individual rice grains dimensions and texture.
+# Rice Grain Quality Analysis using Deep-Learning
 
 ## Introduction 
-A Deep Convolutional Neural Network Approach to Rice Grain Purity Analysis is available in this repository. The percentage of foreign grains mixed in with rice is one important indicator of rice purity. Traditiionally, most rice sellers employed laborers with years of experience to manually annotate rice grains to confirm their purity. However, this is an expensive method that typically yields inaccurate results.This is extremely time-cosuming as well. Consequently, this approach will determine a rice sample'spurity from a scanned image of the sample in a matter of seconds and with perfect accuracy. All grains will be identified and categorized according to their respective grain types in the result.
+A Deep Convolutional Neural Network Approach to Rice Grain Purity Analysis is available in this repository. The percentage of foreign grains mixed in with rice is one important indicator of rice purity. Traditionally, most rice sellers employed laborers with years of experience to manually annotate rice grains to confirm their purity. However, this is an expensive method that typically yields inaccurate results. This is extremely time-consuming as well. Consequently, this approach will determine rice purity from a scanned image of the sample in a matter of seconds and with perfect accuracy. All grains will be identified and categorized according to their respective grain types in the result.
 
 ## Aims or Objectives:
 * Obtaining the measurements of individual rice grains
@@ -38,7 +38,7 @@ The aims' approach is clearly explained, with vivid visualizations providing fur
 3. **Counting rice grains using the Contours method**
     * Working over Clear images to get insight into grain touching problem
 3. **Applying Watershed Algorithm** (Solving grains touching problem)
-    * Applying Watershed Algorithm for Solving Touching Rice grains problem
+    * Applying the Watershed Algorithm for Solving Touching Rice grains problem
   
 4. **Counting total Rice grains and Broken Rice grains using the contour area**
     * For total rice grain counting: the Watershed method
@@ -48,9 +48,9 @@ The aims' approach is clearly explained, with vivid visualizations providing fur
 <a href="https://www.youtube.com/watch?v=5BAdC-UXpEQ"><img src="https://i.ibb.co/kqg4Jpb/Counting-RIce-Grains.png" alt="Counting-RIce-Grains" border="0"></a>
 
 Making the given image into the best format possible is the basic idea behind solving the objective (counting rice grains). \
-It would be simple to count the rice grains if the image was clear and the grains were clearly separated from the background.
+It would be simple to count the rice grains if the image was clear and the grains were separated from the background.
 
-Then, Solve the actutal Corner cases and hence build the proper solution.
+Then, Solve the actual Corner cases and hence build the proper solution.
 
 
 **There are a total 3 major and challenging parts in building solutions:**
@@ -59,7 +59,7 @@ Then, Solve the actutal Corner cases and hence build the proper solution.
 3. Counting broken rice
 
 ## Image Preprocessing
-One of the most important components of the approach is image preprocessing, as Whole Ideology depends on it.
+One of the most important components of the approach is image preprocessing, as the Whole Ideology depends on it.
 
 It is simple to proceed with the techniques if the image is precisely adjusted to meet the requirements.
 
@@ -78,7 +78,7 @@ Once the image has been successfully pre-processed, the problem statement's chal
 
 "**Counting the rice grains that are touching each other**" 
 
-Even counting the rice grains by hand during a manual inspection procedure is difficult. The illusion is created by the white colour and small size.
+Even counting the rice grains by hand during a manual inspection procedure is difficult. The illusion is created by the white color and small size.
 
 neatly, if the rice grains are neatly separated, counting them is fairly simple for machines. The reason for this is the abundance of available algorithms and helpful strategies.
 
@@ -98,10 +98,10 @@ It's similar to filling in the valleys and then dividing them into hills.
 
 
 ## Counting broken rice
-Counting broken rice grains is a common task, however we will obtain the total number of rice grains in the image after applying the Watershed algorithm.
+Counting broken rice grains is a common task, however, we will obtain the total number of rice grains in the image after applying the Watershed algorithm.
 
 
-Using an area-based technique, I classified the rice grains into two categories by applying a threshold after a number of trial and error attempts.
+Using an area-based technique, I classified the rice grains into two categories by applying a threshold after several trial and error attempts.
 <center> ** Either Broken rice grain or Full rice grain **. </center>
 
 The image is classified as broken rice if its area is smaller than the given threshold.
